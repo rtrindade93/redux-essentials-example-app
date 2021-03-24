@@ -108,7 +108,6 @@ new Server({
         pastDate = new Date(now.valueOf())
         pastDate.setMinutes(pastDate.getMinutes() - 15)
       }
-
       // Create N random notifications. We won't bother saving these
       // in the DB - just generate a new batch and return them.
       const notifications = [...Array(numNotifications)].map(() => {
